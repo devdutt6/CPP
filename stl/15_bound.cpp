@@ -4,10 +4,11 @@ using namespace std;
 int main() {
   int a[] = { 1, 2, 3, 4, 6 };
 
-  // int i = lower_bound(a, a+5, 4); // if not exists then will point to the immidiate greater number than specified and it will return its address
-  int i = lower_bound(a, a+5, 4) - a; // if you minus a then it willl return the index of the next immidiate greater number or number itself if exist
+  auto i = lower_bound(a, a+5, 4); // if not exists then will point to the immidiate greater number than specified and it will return its address
+  cout << i << endl; // 3
 
-  cout << i << endl;
+  int i = lower_bound(a, a+5, 4) - a; // if you minus a then it willl return the index of the next immidiate greater number or number itself if exist
+  cout << i << endl; // 3
 
   vector<int> vec;
   vec.emplace_back(1);

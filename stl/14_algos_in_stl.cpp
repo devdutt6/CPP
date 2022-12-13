@@ -12,6 +12,7 @@ bool comp( pair<int, int> p1, pair<int, int> p2){
 
 int main() {
   vector<int> v;
+  pair<int, int> a[] = { {4, 1}, {2, 1}, {1, 2} };
 
   v.emplace_back(1);
   v.emplace_back(5);
@@ -20,10 +21,9 @@ int main() {
   v.emplace_back(2);
 
   // sort(v.begin(), v.end()); // to sort it normally
-  sort(v.begin(), v.end()); // to reverse sort
+  sort(v.begin(), v.end(), greater<int>()); // to reverse sort
+  sort( 1, 4, comp ); // comparator custome sorting
 
-  pair<int, int> a[] = { {4, 1}, {2, 1}, {1, 2} };
-  sort( 1, 4, comp ); // comparator
 
   for( auto it : v ){
     cout << it << " ";
@@ -44,7 +44,7 @@ int main() {
   }while( next_permutation(s.begin(), s.end())); //  this will run in dictionary order like 123, 132, 213, 231, 312, 321
   // so if initial string will be 231 then only 2 other permutation will show so be aware to sort string first then find the permutations
 
-  int maxi = *(max_element(v.begin(), v.end()));
+  int maxi = *max_element(v.begin(), v.end());
 
   return 0;
 }

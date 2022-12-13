@@ -2,32 +2,49 @@
 using namespace std;
 
 int main() {
-// 1. find the first occurance of X in a sorted array. if it does not exist then return -1
-  int a[] = { 1, 4, 4, 4, 4, 9, 9, 10, 11 };
-  int X = 9;
+  int a[] = { 2, 8, 8, 8, 8, 18, 18, 20, 22 };
 
-  // int ind = lower_bound(a, a+9, X) - a;
+  //? 1.Find the first occurance of X in sorted array.
+  // int find = 8;
+  // int position = lower_bound(a, a+9, find) - a;
+  // if(position < 9 && a[position] == find){
+  //   cout << "found at index " << position << endl; // 1
+  // }
+  // else{
+  //   cout << "NOF" << endl;
+  // }
 
-  // if( ind!= 9 && a[ind] == X ) cout << ind <<endl;
-  // else cout << -1 << endl;
+  //? 2.Find the last occurance of X in sorted array.
+  // int find = 8;
+  // int position = upper_bound(a, a+9, find) - a;
+  // if(position >= 0 && a[position-1] == find){
+  //   cout << "found at index " << position - 1 << endl; // 4
+  // }
+  // else{
+  //   cout << "NOF" << endl;
+  // }
 
-// 2. find the last occurance of an given element and print -1 if do not exist
-  // int ind = upper_bound(a, a+9, X) - a;
-  // ind--;
-  // if( ind >=0 && ind != 9 && a[ind] == X ) cout << ind << endl;
-  // else cout << -1 << endl;
+  //? 3.Find the largest Number smaller than X in sorted array.
+  // int find = 19;
+  // int position = lower_bound(a, a+9, find) - a;
+  // position--;
+  // if(position < 9 && position >= 0){
+  //   cout << "found at index " << position << endl; // 6
+  // }
+  // else{
+  //   cout << "NOF" << endl;
+  // }
 
-// 3. find the largest number smaller than X in sorted array if not tehn -1
-  // int ind = lower_bound(a, a+9, X) - a;
-  // ind--;
-  // if(ind >= 0) cout << a[ind] << endl;
-  // else cout << -1 << endl;
+  //? 4.Find the smallest Number greater than X in sorted array.
+  int find = 19;
+  int position = upper_bound(a, a+9, find) - a;
 
-// 4. find the smallest number greater than X if non then -1
-  // int ind = upper_bound(a, a+9, X) - a;
-
-  // if(ind < 9) cout <<  a[ind] << endl;
-  // else cout << -1 << endl;
+  if(position < 9){
+    cout << "found at index " << position << endl; // 7
+  }
+  else{
+    cout << "NOF" << endl;
+  }
 
   return 0;
 }
