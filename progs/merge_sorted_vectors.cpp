@@ -1,7 +1,8 @@
-#include <iostream>
 #include <bits/stdc++.h>
 
 using namespace std;
+
+// Q. Merge two sorted arrays in a new sorted array
 
 vector<int> merge( vector<int> arr, vector<int> arr1 ){
   vector<int> arr3((arr.size()+arr1.size()), 0);
@@ -11,13 +12,13 @@ vector<int> merge( vector<int> arr, vector<int> arr1 ){
   while( arr[i]>0 && arr1[j]>0 ){
     if( arr[i]<arr1[j] ){
       arr3[count] = arr[i];
-      i++;
       count++;
+      i++;
     }
     else{
       arr3[count] = arr1[j];
-      j++;
       count++;
+      j++;
     }
   }
 
@@ -41,8 +42,8 @@ int main() {
 
   vector<int> arr3 = merge(arr, arr1);
 
-  for( auto i = arr3.begin(); i<arr3.end();i++ ){
-    cout << *i << " ";
+  for( auto i : arr3 ){
+    cout << i << " ";
   }
 
   return 0;

@@ -1,26 +1,28 @@
-#include <iostream>
 #include <bits/stdc++.h>
 
 using namespace std;
+// Q. Print the fibbonaci series till given count
 
+// printing fibbonacci numbers with recursion
 void fibbo( int n, int first, int second, int limit ){
   if(n>=limit){
+    cout << endl;
     return;
   }
   else if( n==0 ){
     cout << 0 << " ";
-    fibbo(1, 0, 0, limit);
+    return fibbo(1, 0, 0, limit);
   }
   else if( n==1 ){
     cout << 1 << " ";
-    fibbo(2, 0, 1, limit);
+    return fibbo(2, 0, 1, limit);
   }
   else{
     int temp = first + second;
     first = second;
     second = temp;
     cout << temp << " ";
-    fibbo(n+1, first, second, limit);
+    return fibbo(n+1, first, second, limit);
   }
 }
 

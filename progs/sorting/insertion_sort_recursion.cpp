@@ -1,4 +1,3 @@
-#include <iostream>
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -7,13 +6,8 @@ void insertion( vector<int> &arr, int limit){
   if(limit == arr.size()) return;
 
   for( int i=0;i<limit;i++ ){
-    if( arr[limit]>arr[i] ){
-      continue;
-    }
-    else{
-      swap(arr[i], arr[limit]);
-      continue;
-    }
+    if( arr[limit]>arr[i] ) continue;
+    swap(arr[i], arr[limit]);
   }
 
   insertion( arr, limit+1 );
@@ -24,9 +18,10 @@ int main() {
 
   insertion(arr, 0);
 
-  for( auto i = arr.begin(); i<arr.end();i++ ){
-    cout << *i << " ";
+  for( auto i : arr ){
+    cout << i << " ";
   }
+  cout << endl;
 
   return 0;
 }

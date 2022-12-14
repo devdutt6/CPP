@@ -1,4 +1,3 @@
-#include <iostream>
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -34,9 +33,10 @@ int main() {
 
   quick(arr, 0, 7);
 
-  for( auto i = arr.begin(); i<arr.end();i++ ){
-    cout << *i << " ";
+  for( auto i : arr ){
+    cout << i << " ";
   }
+  cout << endl;
 
   return 0;
 }

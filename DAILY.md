@@ -17,3 +17,7 @@ Some of the sorting techniques and some basic programs from folder [progs](https
 ### DAY-2(13-12-22)
 STL Completed revision with its daily use algorithms, containers and iterators.
 Covered lower_bound and upper_bound functions with a small [exercise](https://github.com/devdutt6/CPP/tree/main/stl/bound_exercise.cpp).
+
+### DAY-3(14-12-22)
+Revised all the sorting algorithms like bubble, insertion, merge, quick, selection.
+Got started by codeing small problems like factorial, fibbonaci, palindrom etc.
