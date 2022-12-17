@@ -31,3 +31,6 @@ Got started by codeing small problems like factorial, fibbonaci, palindrom etc.
 
 ### DAY-4(15-12-22)
 Easy Array Problems in can be found in directory [array/easy](https://github.com/devdutt6/CPP/tree/main/array/easy).
+
+### DAY-5, 6(16/17-12-22)
+Continue with Easy Array Problems.
