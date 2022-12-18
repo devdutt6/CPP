@@ -4,7 +4,7 @@
 - Try to devide problems like if problem is sorting think comparison between just two numbers and then write that code then goto main problem and code it.
 - `auto` automatic type assigner in cpp, it might save us from some hazards ;).
 - `iterators` are important to understand it will be very helpful moving further.
--
+- `Binary search` is a part/member of `Divide and Conqure` algorithm.
 
 
 ## Covered topics and algos
@@ -14,6 +14,8 @@
 - Basic recursion, Math, Hashing and Logical thinking.
 - Easy Array Problems.
   - Reversal algorithm for left and right shieft n elements.
+- Binary Search
+  - BS in 1D array
 
 ## Day
 
@@ -34,3 +36,7 @@ Easy Array Problems in can be found in directory [array/easy](https://github.com
 
 ### DAY-5, 6(16/17-12-22)
 Continue with Easy Array Problems.
+
+### DAY-7 (18-12-22)
+Getting started with binary search with the simple 1D arrays. The practice code will be in [BS](https://github.com/devdutt6/CPP/tree/main/BS). Did 2 problems this GFG is fkin [annoying](https://practice.geeksforgeeks.org/problems/floor-in-a-sorted-array-1587115620/1?track=DSASP-Searching&amp%3BbatchId=154&utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=floor-in-a-sorted-array) there was no example for true test case and no explaination too.
+
