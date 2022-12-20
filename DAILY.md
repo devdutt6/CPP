@@ -40,3 +40,5 @@ Continue with Easy Array Problems.
 ### DAY-7 (18-12-22)
 Getting started with binary search with the simple 1D arrays. The practice code will be in [BS](https://github.com/devdutt6/CPP/tree/main/BS). Did 2 problems this GFG is fkin [annoying](https://practice.geeksforgeeks.org/problems/floor-in-a-sorted-array-1587115620/1?track=DSASP-Searching&amp%3BbatchId=154&utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=floor-in-a-sorted-array) there was no example for true test case and no explaination too.
 
+### DAY-8, 9 (19/20-12-22)
+Binary search continue with easy problems.
