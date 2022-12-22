@@ -2,20 +2,35 @@
 using namespace std;
 
 /**
- * @brief find the element's index in rotated sorted array
+ * @brief find if the element exists in rotated sorted array
  *
  * @param vector<int>
  * @param int target
- * @return int index
+ * @return boolean
  */
-int findinrotated(vector<int>& arr, int target){
+int existinrotated(vector<int>& arr, int target){
   int start = 0, end = arr.size()-1;
 
+  if( arr[start] ==  target || arr[end] == target){
+    return 1;
+  }
+
+  if( arr[start] != target && arr[start] == arr[end] ){
+    int temp = arr[start];
+
+    while( arr[start] == temp ){
+      start++;
+    }
+    while( arr[end] == temp ){
+      end--;
+    }
+  }
   while( start<=end ){
+
     int mid = (start+end) >> 1;
 
     if( arr[mid] == target ){
-      return mid;
+      return 1;
     }
 
     if( arr[start] <= arr[mid] ){
@@ -36,14 +51,13 @@ int findinrotated(vector<int>& arr, int target){
     }
   }
 
-  return -1;
+  return 0;
 }
 
 int main(){
-  vector<int> arr = { 4,5,6,7,0,1,2 };
+  vector<int> arr = { 1,0,1,1,1,1 };
 
-  cout << findinrotated(arr, 5) << endl; // 1
-  cout << findinrotated(arr, 3) << endl; // -1
+  cout << existinrotated(arr, 0) << endl; // 1
 
   return 0;
 }
