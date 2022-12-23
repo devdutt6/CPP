@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// Q. Given the sorted rotated array nums of unique elements, return the minimum element of this array.
+
 /**
  * @brief find minimum element in rotated sorted array
  *

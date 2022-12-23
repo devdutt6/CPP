@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// Q. find the element in array which only occured once in rotated sorted array.
+
 /**
  * @brief find the element occuring once in sorted array
  *
@@ -8,7 +10,32 @@ using namespace std;
  * @return int solo
  */
 int findonce(vector<int>& arr){
+  int start = 0, end = arr.size()-1;
 
+  while( start<=end ){
+    int mid = (start+end) >> 1;
+    if( arr[mid] != arr[mid-1] && arr[mid] != arr[mid+1] ){
+      return arr[mid];
+    }
+    int left, right;
+    if( arr[mid] == arr[mid-1] ){
+      left = mid-1;
+      right = mid;
+    }
+    else{
+      left = mid;
+      right = mid+1;
+    }
+
+    if( (left-start)%2 == 0 ){
+      start = right+1;
+    }
+    else{
+      end = left-1;
+    }
+  }
+
+  return -1;
 }
 
 int main(){

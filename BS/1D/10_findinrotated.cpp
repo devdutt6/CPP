@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// Q. There is an integer array nums sorted in ascending order (with distinct values). Given the array nums after the possible clockwise rotation and an integer target, return if the target is in nums, or -1 if it is not in nums.
+
 /**
  * @brief find if the element exists in rotated sorted array
  *

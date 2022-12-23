@@ -42,3 +42,6 @@ Getting started with binary search with the simple 1D arrays. The practice code 
 
 ### DAY-8, 9 (19/20-12-22)
 Binary search continue with easy problems.
+
+### DAY-10 (22-12-22)
+Binary search in 1D array.
