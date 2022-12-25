@@ -5,6 +5,7 @@
 - `auto` automatic type assigner in cpp, it might save us from some hazards ;).
 - `iterators` are important to understand it will be very helpful moving further.
 - `Binary search` is a part/member of `Divide and Conqure` algorithm.
+- Think where will the pointers be pointing after executing binary search on some search space some answer you might find some answers there.(upper bound, lower bound answers at pointers after the loop was terminated).
 
 
 ## Covered topics and algos
@@ -16,6 +17,8 @@
   - Reversal algorithm for left and right shieft n elements.
 - Binary Search
   - BS in 1D array
+  - BS in 2D matrix
+  - BS in search space
 
 ## Day
 
@@ -43,5 +46,8 @@ Getting started with binary search with the simple 1D arrays. The practice code 
 ### DAY-8, 9 (19/20-12-22)
 Binary search continue with easy problems.
 
-### DAY-10 (22-12-22)
+### DAY-10, 11 (22/23-12-22)
 Binary search in 1D array.
+
+### DAY 12, 13 (24/25-12-22)
+Binary Search in 2D matrix completed and started binary search in search space.

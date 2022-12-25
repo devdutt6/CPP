@@ -49,6 +49,7 @@ int findFloorStrict(vector<int>& arr, int target){
 
   return lowerBound;
 }
+
 /**
  * @brief returns the index of maximum number less or equal than target number.
  *
@@ -56,32 +57,43 @@ int findFloorStrict(vector<int>& arr, int target){
  * @param int target
  * @return int index
  */
-int findFloor(vector<int>& arr, int target){
-  int i=0, j = arr.size()-1;
+int findFloor( vector<int>& arr, int target ){
+  int start = 0, end = arr.size()-1;
 
-  if( arr[0] > target ){
-    return -1;
+  if( arr[0] > target ) return -1;
+
+  while(start<=end){
+    int mid = (start+end) >> 1;
+
+    if( arr[mid] < target ) start = mid + 1;
+    else end = mid - 1;
   }
 
-  while( i <= j ){
-    if( i == j ){
-      return i;
-    }
-    int mid = (i+j)/2;
-
-    if( arr[mid] == target ){
-      return mid;
-    }
-    else if( arr[mid] < target){
-      i = mid+1;
-    }
-    else{
-      j = mid-1;
-    }
-  }
-
-  return -1;
+  return arr[start] == target ? arr[start] : arr[end];
 }
+// ? right but code is confusive
+// int findFloor(vector<int>& arr, int target){
+//   int i=0, j = arr.size()-1;
+//   if( arr[0] > target ){
+//     return -1;
+//   }
+//   while( i <= j ){
+//     if( i == j ){
+//       return i;
+//     }
+//     int mid = (i+j)/2;
+//     if( arr[mid] == target ){
+//       return mid;
+//     }
+//     else if( arr[mid] < target){
+//       i = mid+1;
+//     }
+//     else{
+//       j = mid-1;
+//     }
+//   }
+//   return -1;
+// }
 
 // ? first attempt
 // int findFloor(vector<int>& arr, int target, int start, int end){
@@ -116,7 +128,7 @@ int main(){
   int target = 106;
 
   cout << findFloor(arr, target) << endl; // 106
-  cout << findFloorStrict(arr, target) << endl; // 105
+  // cout << findFloorStrict(arr, target) << endl; // 105
 
   return 0;
 }
