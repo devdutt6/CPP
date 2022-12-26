@@ -10,12 +10,7 @@ int Solve(int N, vector<int>& piles, int H) {
     int sum = 0;
     for( auto i = 0;i<N;i++ ){
       sum += (piles[i]+mid-1)/mid;
-      // sum += ((pil/es[i]/mid) + (piles[i]%mid > 0 ? 1 : 0));
     }
-    // if( sum == H ){
-    //   return mid;
-    // }
-    // else
     if( sum > H ){
       start = mid+1;
     }
