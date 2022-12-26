@@ -51,3 +51,6 @@ Binary search in 1D array.
 
 ### DAY 12, 13 (24/25-12-22)
 Binary Search in 2D matrix completed and started binary search in search space.
+
+### DAY 14 (26-12-22)
+Binary Search in 2D problem 4 done.
