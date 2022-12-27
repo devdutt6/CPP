@@ -6,15 +6,34 @@ using namespace std;
 // 6
 // Output:
 // 5
+int check(vector<int>& arr, int mid){
+  int sum = 0;
+  for( auto i : arr ){
+    sum += (i+mid-1)/mid;
+  }
+  return sum;
+}
 
 int small(vector<int> arr, int limit){
-
+  int start = 1, end = 1e9, ans = -1;
+  while(start<=end){
+    int mid = (start+end) >> 1;
+    if( check(arr, mid)<=limit ){
+      ans = mid;
+      end = mid-1;
+    }
+    else{
+      start = mid+1;
+    }
+  }
+  return ans;
 }
 
 int main(){
-  vector<int> arr = { 1, 2, 5, 9 };
+  // vector<int> arr = { 1, 2, 5, 9 };
+  vector<int> arr = { 44, 33, 22, 11, 1 };
 
-  cout << small(arr, 6) << endl;
+  cout << small(arr, 5) << endl;
 
   return 0;
 }
