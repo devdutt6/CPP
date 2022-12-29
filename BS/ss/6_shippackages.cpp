@@ -3,19 +3,21 @@ using namespace std;
 
 // Q. Given an array arr[] of N weights. Find the least weight capacity of a boat to ship all weights within D days.The ith weight has a weight of arr[i]. Each day, we load the boat with weights given by arr[i].We may not load more weight than the maximum weight capacity of the ship.
 
-int check(vector<int>& arr, int mid ){
-  int sum = 0, count=0;
-  for( auto i : arr ){
-    if(i>mid) return -1;
-    if( sum+i<=mid ){
-      sum += i;
+int getDaysIfLimit(vector<int>& arr, int mid, int N ){
+  int sum = 0, count=0, i=0;
+  while( i < N ){
+    if(arr[i]>mid) return -1;
+    sum += arr[i];
+    if( sum<=mid ){
+      i++;
       continue;
     }
-    sum > 0 ? count++ : false;
-    sum = 0;
-    count++;
+    else{
+      count++;
+      sum = 0;
+    }
   }
-  return sum>0 ? count+1 : count;
+  return sum > 0 ? count+1 : count;
 }
 
 int leastWeight(vector<int>& arr, int target){
@@ -23,8 +25,7 @@ int leastWeight(vector<int>& arr, int target){
 
   while(start<=end){
     int mid = (start+end) >> 1;
-    int temp = check(arr, mid);
-    cout << temp << "->" << mid << endl;
+    int temp = getDaysIfLimit(arr, mid, arr.size());
     if( temp != -1 ){
       if( temp <= target ){
         ans = mid;
@@ -42,10 +43,8 @@ int leastWeight(vector<int>& arr, int target){
 }
 
 int main(){
-  vector<int> arr = { 9, 8, 10 }; // 10
-  // vector<int> arr = { 1, 2, 1 }; // 3
+  vector<int> arr = { 8, 9, 7, 6 }; // 13
 
-  // cout << check(arr, 5) << endl;
   cout << leastWeight(arr, 3) << endl;
 
   return 0;
