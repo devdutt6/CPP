@@ -6,6 +6,7 @@
 - `iterators` are important to understand it will be very helpful moving further.
 - `Binary search` is a part/member of `Divide and Conqure` algorithm.
 - Think where will the pointers be pointing after executing binary search on some search space some answer you might find some answers there.(upper bound, lower bound answers at pointers after the loop was terminated).
+- If you are stuck somewhere write down the problem you are facing just write it, its not the problem statement, i am talking about the problem exactly you need to know it has tobe done. Like to sort you have to check are all the element before it should be small.
 
 
 ## Covered topics and algos
