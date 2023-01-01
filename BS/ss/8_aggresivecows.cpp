@@ -15,7 +15,7 @@ int getCount(vector<int>& arr, int mid){
 }
 
 int aggresive(vector<int>& arr, int cows){
-  int start = 0, end = 1e9, ans = INT_MIN;
+  int start = arr[0], end = arr[arr.size()-1], ans = INT_MIN;
 
   while(start<=end){
     int mid = (start+end) >> 1;
@@ -33,7 +33,7 @@ int aggresive(vector<int>& arr, int cows){
 }
 
 int main(){
-  vector<int> arr = { 1, 2, 8, 4, 9 };
+  vector<int> arr = { 1, 2, 8, 4, 9 }; // 3
 
   sort(arr.begin(), arr.end());
   cout  << aggresive(arr, 3) << endl;
