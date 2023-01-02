@@ -21,15 +21,33 @@ using namespace std;
 //   return sum;
 // }
 
-int maxelementsum( vector<int>& arr, int k ){
+int maxelementsum( vector<int>& arr, int k, int n){
+  int i=0,j=0, maxSum=INT_MIN,sum=0,iWindows=0,iWindowsmin=0;
 
+  while(j<n){
+    // sum for cummulative sum
+    sum+=arr[j];
+    // if sub array length min
+    if(j-i+1==k){
+      maxSum=max(maxSum,sum);
+    }
+    // if sub array greater than min
+    if(j-i+1>k){
+      iWindows+=arr[i];
+      i++;
+      iWindowsmin=min(iWindowsmin,iWindows);
+      maxSum=max(maxSum,sum-iWindowsmin);
+    }
+    j++;
+  }
+  return maxSum;
 }
 
 int main(){
-  // vector<int> arr = {1, 1, 1, 1, 1, 1};
-  vector<int> arr = {-4, -2, 1, -3};
+  vector<int> arr = {1, 1, 1, 1, 1, 1};
+  // vector<int> arr = {-4, -3, 1, -2};
 
-  cout << maxelementsum(arr, 2) << endl;
+  cout << maxelementsum(arr, 2, 6) << endl;
 
   return 0;
 }
