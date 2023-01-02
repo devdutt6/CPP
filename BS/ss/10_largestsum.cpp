@@ -3,7 +3,7 @@ using namespace std;
 
 // Q. Given an array and a number k, find the largest sum of the subarray containing at least k numbers. It may be assumed that the size of array is at-least k
 
-// ? not solution
+// ? not solution it is for sorted
 // int maxelementsum( vector<int>& arr, int K ){
 //   int n = arr.size()-1, count = 1;
 //   int lastele = arr[n], i = n-1;

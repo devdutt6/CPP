@@ -55,3 +55,21 @@ Binary Search in 2D matrix completed and started binary search in search space.
 
 ### DAY 14 (26-12-22)
 Binary Search in 2D problem 4 done.
+
+### DAY 15 (27-12-22)
+Binary Search in 2D problem number 5 done.
+
+### DAY 16,17 (28, 29-12-22)
+Binary Search in 2D problem number 6 done.
+
+### DAY 18 (30-12-22)
+Binary Search in 2D problem number 7 median of two sorted done.
+
+### DAY 19 (31-12-22)
+Binary Search in 2D problem number 8 aggresive cows done.
+
+### DAY 20 (1-1-23)
+Binary Search in 2D problem number 9 bookallocation done.
+
+### DAY 21 (2-1-23)
+Binary Search in 2D problem number 10 largest sub array sum done.
