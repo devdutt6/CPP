@@ -71,5 +71,5 @@ Binary Search in 2D problem number 8 aggresive cows done.
 ### DAY 20 (1-1-23)
 Binary Search in 2D problem number 9 bookallocation done.
 
-### DAY 21 (2-1-23)
-Binary Search in 2D problem number 10 largest sub array sum done.
+### DAY 21, 22 (2, 3-1-23)
+Binary Search in 2D problem number 10 largest sub array sum still pending cause learning Next.js almost finished.
