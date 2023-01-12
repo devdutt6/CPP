@@ -73,3 +73,14 @@ Binary Search in 2D problem number 9 bookallocation done.
 
 ### DAY 21, 22 (2, 3-1-23)
 Binary Search in 2D problem number 10 largest sub array sum still pending cause learning Next.js almost finished.
+
+### Had to take a break for a week cause was not feelingwell
+
+### DAY 22-25 (7-10,-1-23)
+Got started with string very easy problems but getting handson with string first time so its taking time.
+
+### Missed 11-1-23
+Went to see the PSM100 exibition.
+
+### DAY 26 (12-1-23)
+Continued with the string problems the easy ones.
