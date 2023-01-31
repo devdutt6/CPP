@@ -84,3 +84,10 @@ Went to see the PSM100 exibition.
 
 ### DAY 26 (12-1-23)
 Continued with the string problems the easy ones.
+
+### damn! i took a unintentional break
+January fking brezzed.
+Krushnapal's surgery, psm100, and started with css and was spent time on doing that now shiefting focus from that and back to grind.
+
+### DAY 20 (1-2-23)
+Continue with the string and read some OS from most asked Interview questions.
