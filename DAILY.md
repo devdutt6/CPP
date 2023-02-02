@@ -91,3 +91,6 @@ Krushnapal's surgery, psm100, and started with css and was spent time on doing t
 
 ### DAY 20 (1-2-23)
 Continue with the string and read some OS from most asked Interview questions.
+
+### DAY 21(2-2-23)
+String did only one problem which was too easy Atoi.
