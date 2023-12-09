@@ -94,3 +94,9 @@ Continue with the string and read some OS from most asked Interview questions.
 
 ### DAY 21(2-2-23)
 String did only one problem which was too easy Atoi.
+
+### DAY N(2-12-23)
+Finished Striver's sheet and started solving POTDs 1st day was moderate 2nd was hard couldnt even do the moderate one.
+
+### Day N+3(10-12-23)
+First of all need to revise the concepts from the sheet and then will again start with POTDs and then contest.
